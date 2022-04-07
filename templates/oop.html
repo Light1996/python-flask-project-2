@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Project</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">OOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/git">Git</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/docker">Docker</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/flask">Python-Flask</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/ci">CI-CD</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/oop">OOP</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/aaa">AAA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('static/assets/img/oop.png')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>OOP NOTES</h1>
+                            <h2 class="subheading">Branches, Merges, Tags, Repo, Commit</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">OOP</a>
+                                on August 24, 2022
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section-heading">What is Object Oriented?</h2>
+                        <p>
+OOPS CONCEPT WITH REAL LIFE EXAMPLES:
+
+Objects: Object is the basic unit of object-oriented programming.Objects are identified by its unique name. An object represents a particular instance of a class. There can be more than one instance of an object. Each instance of an object can hold its own relevant data.
+
+An Object is a collection of data members and associated member functions also known as methods.
+
+Classes: Classes are data types based on which objects are created.Objects with similar properties and methods are grouped together to form a Class. Thus a Class represent a set of individual objects. Characteristics of an object are represented in a class as Properties. The actions that can be performed by objects becomes functions of the class and is referred to as Methods.
+                        </p>
+                        <h2 class="section-heading">Example #1:</h2>
+<p>
+For example consider we have a Class of Cars under which Santro Xing, Alto and WaganR represents individual Objects.In this context each Car Object will have its own, Model,Year of Manufacture, Colour, Top Speed, Engine Power etc.,which form Properties of the Car class and the associated actions i.e., object functions like Start, Move, Stop form the Methods of Car Class.No memory is allocated when a class is created. Memory is
+    allocated only when an object is created, i.e., when an instance of a class is created.</p>
+
+<h2 class="section-heading">Example #2:</h2>
+<p>
+An architect will have the blueprints for a house....those blueprints will be plans that explain exactly what properties the house will have and how they are all layed out. However it is just the blueprint, you can't live in it. Builders will look at the blueprints and use those blueprints to make a physical house. They can use the same blueprint to make as many houses as they want....each house will have the same layout and properties. Each house can accommodate it's own families...so one house might have the Smiths live in it, one house might have the Jones live in it.
+
+The blueprint is the class...the house is the object. The people living in the house are data stored in the object's properties.
+</p>
+                        <h2 class="section-heading">Abstraction:</h2>
+                        <p>Abstraction means showing essential features and hiding non-essential
+                            features to the user.
+
+For Eg. Yahoo Mail...</p>
+<p>
+When you provide the user name and password and click on submit button..It will show Compose,Inbox,Outbox,Sentmails...so and so when you click on compose it will open...but user doesn't
+know what are the actions performed internally....It just Opens....that is essential; User doesn't know internal actions ...that is non-essential things...
+
+For Eg. Tv Remote..
+Remote is a interface between user and TV..right. which has buttons like 0 to 10 ,on /of etc but we don't know circuits inside remote...User does not need to know..Just he is using essential thing that is remote.
+</p>
+
+<h2 class="section-heading">Encapsulation:</h2>
+                        <p>Encapsulation means which binds the data and code (or) writing operations and methods in single unit (class).
+
+For Example:
+A car is having multiple parts..like steering,wheels,engine...etc..which binds together to form a single object that is car. So, Here multiple parts of cars encapsulates itself together to form a single object that is Car.
+
+In real time we are using Encapsulation for security purpose...
+
+Encapsulation = Abstraction + Data Hiding.
+                        </p>
+
+                        <h2 class="section-heading">Inheritance:</h2>
+                        <p>Deriving a new class from the existing class,is called Inheritance.
+Derived(sub class) class is getting all the features from Existing (super class\base class) class and also incorporating some new features to the sub class.
+
+For Eg.,
+
+class Address
+{
+String name;
+Srting H.no;
+String Street name;
+}
+class LatestAddress extends Address
+{
+String City;
+String State;
+String Country;
+}
+public class Person
+{
+{
+LatestAddress la = new LatestAddress();
+//Assign variable accordingly...
+}
+}
+
+In the above Example class LatestAddress getting all features from the Address class.
+In the LatestAddress class we have total 6 properties..3 are inherited from Address class and 3 properties are
+incorporated. So In the class Person we are declaring the object of class LatestAddress and then assign new variables using the properties of the previous base classes... So this is a nice example of inheritance..
+                        </p>
+                        <h2 class="section-heading">Polymorphism :</h2>
+<p>
+Polymorphism means ability to take more than one form that an operation can exhibit different behavior at different instance depend upon the data passed in the operation.
+
+1>We behave differently in front of elders, and friends. A single person is behaving differently at different time.
+
+2> A software engineer can perform different task at different instance of time depending on the task assigned to him .He can done coding , testing , analysis and designing depending on the task assign and the requirement.
+
+3> Consider the stadium of common wealth games. Single stadium but it perform multiple task like swimming, lawn tennis etc.
+
+4> If a girl is married and mother of 2 children doing teaching job then she is a women first ,, teacher in a school when she is in school,,wife of someone at home,, mother of her children,, and obvious daughter of someone & may be girl friend of someone (just kidding) means a woman plays different roles at different times that's polymorphism (many forms).
+</p>
+
+Summary:
+OOPs have following features:
+
+1. Object - Instance of Class
+2. Class - Blue print of Object
+3. Encapsulation - Protecting our Data
+4. Polymorphism - Different behaviors at different instances
+5. Abstraction - Hiding our irrelevant Data
+6. Inheritance - One property of object is acquiring to another property of object
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+    </body>
+</html>
